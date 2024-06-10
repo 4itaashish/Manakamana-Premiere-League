@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eFootball League</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #b73714;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #26cec0;
+        }
+        nav a {
+            color: white;
+            padding: 1em;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #7b1fa2;
+        }
+        .content {
+            padding: 2em;
+        }
+        .matches, .standings {
+            background-color: white;
+            padding: 1em;
+            margin: 1em 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .match {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5em 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .match:last-child {
+            border-bottom: none;
+        }
+        .standings table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .standings th, .standings td {
+            padding: 0.5em;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .standings th {
+            background-color: #e0e0e0;
+        }
+        .standings td:last-child {
+            text-align: center;
+        }
+        @media only screen and (max-width: 600px) {
+            .match {
+                flex-direction: column;
+                text-align: center;
+            }
+            .standings table, .standings th, .standings td {
+                font-size: 0.8em;
+                padding: 0.3em;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>eFootball<br>Manakamana Premiere League</h1>
+    </header>
+    <nav>
+        <a href="#fixtures">Fixtures</a>
+        <a href="#points-table">Points Table</a>
+    </nav>
+    <div class="content">
+        <section id="fixtures" class="matches">
+            <h2>Matchday 1</h2>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>9 - 1</div>
+                <div>BINAYA</div>
+                
+            </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div>2 - 1</div>
+                <div>RAJ</div>
+            </div>
+            <h2>Matchday 2</h2>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>3 - 2</div>
+                <div>RAJ</div>
+            </div>
+            <div class="match">
+                <div>BINAYA</div>
+                <div>2 - 3</div>
+                <div>ASAL</div>
+            </div>
+            <h2>Matchday 3</h2>
+            <div class="match">
+                <div>RAJ</div>
+                <div>VS</div>
+                <div>BINAYA</div>
+            </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div>VS</div>
+                <div>BINAYA</div>
+            </div>
+            <h2>Matchday 4</h2>
+            <div class="match">
+                <div>RAJ</div>
+                <div>VS</div>
+                <div>AASHISH</div>
+            </div>
+            <div class="match">
+                <div>BINAYA</div>
+                <div>VS</div>
+                <div>AASHISH</div>
+            </div>
+            <h2>Matchday 5</h2>
+            <div class="match">
+                <div>RAJ</div>
+                <div>VS</div>
+                <div>ASAL</div>
+            </div>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>VS</div>
+                <div>ASAL</div>
+            </div>
+            <h2>Matchday 6</h2>
+            <div class="match">
+                <div>BINAYA</div>
+                <div>VS</div>
+                <div>RAJ</div>
+            </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div>VS</div>
+                <div>AASHISH</div>
+            </div>
+        </section>
+        <section id="points-table" class="standings">
+            <h2>Standings</h2>
+            <table id="standings-table">
+                <thead>
+                    <tr>
+                        <th>Club</th>
+                        <th>MP</th>
+                        <th>W</th>
+                        <th>D</th>
+                        <th>L</th>
+                        <th>GF</th>
+                        <th>GA</th>
+                        <th>GD</th>
+                        <th>Pts</th>
+                        <th>Last 5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ASAL</td>
+                        <td>2</td>      <!---mp-->
+                        <td>2</td>       <!---w-->
+                        <td>0</td>       <!---d-->
+                        <td>0</td>       <!---l-->
+                        <td>5</td>      <!---gf-->
+                        <td>3</td>      <!---ga-->
+                        <td>2</td>      <!---gd-->
+                        <td>6</td>     <!---pts-->
+                        <td>✔️✔️</td>     <!--last 5-->
+                    </tr>
+                    <tr>
+                        <td>AASHISH</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>12</td>
+                        <td>3</td>
+                        <td>9</td>
+                        <td>6</td>
+                        <td>✔️✔️</td>
+                    </tr>
+                    <tr>
+                        <td>RAJ</td>
+                        <td>2</td>     <!---mp-->
+                        <td>0</td>      <!---w-->
+                        <td>0</td>      <!---d-->
+                        <td>2</td>      <!---l-->
+                        <td>3</td>     <!---gf-->
+                        <td>5</td>     <!---ga-->
+                        <td>-2</td>     <!---gd-->
+                        <td>0</td>    <!---pts-->
+                        <td>❌❌</td>    <!--last 5-->
+                    </tr>
+                    <tr>
+                        <td>BINAYA</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>12</td>
+                        <td>-9</td>
+                        <td>0</td>
+                        <td>❌❌</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <header>
+    <h1>Developed By<br>AASHISH POKHREL</h1></header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const standingsTable = document.getElementById('standings-table').getElementsByTagName('tbody')[0];
+            const standings = Array.from(standingsTable.getElementsByTagName('tr'));
+
+            function getData(row) {
+                const cells = row.getElementsByTagName('td');
+                return {
+                    name: cells[0].innerText,
+                    mp: parseInt(cells[1].innerText),
+                    w: parseInt(cells[2].innerText),
+                    d: parseInt(cells[3].innerText),
+                    l: parseInt(cells[4].innerText),
+                    gf: parseInt(cells[5].innerText),
+                    ga: parseInt(cells[6].innerText),
+                    gd: parseInt(cells[7].innerText),
+                    pts: parseInt(cells[8].innerText),
+                    form: cells[9].innerText
+                };
+            }
+
+            function setData(row, data) {
+                const cells = row.getElementsByTagName('td');
+                cells[0].innerText = data.name;
+                cells[1].innerText = data.mp;
+                cells[2].innerText = data.w;
+                cells[3].innerText = data.d;
+                cells[4].innerText = data.l;
+                cells[5].innerText = data.gf;
+                cells[6].innerText = data.ga;
+                cells[7].innerText = data.gd;
+                cells[8].innerText = data.pts;
+                cells[9].innerText = data.form;
+            }
+
+            function sortStandings(standings) {
+                return standings.sort((a, b) => {
+                    const dataA = getData(a);
+                    const dataB = getData(b);
+
+                    if (dataA.pts !== dataB.pts) {
+                        return dataB.pts - dataA.pts;
+                    }
+                    if (dataA.gd !== dataB.gd) {
+                        return dataB.gd - dataA.gd;
+                    }
+                    return dataB.gf - dataA.gf;
+                });
+            }
+
+            function updateStandings() {
+                const sortedStandings = sortStandings(standings);
+                sortedStandings.forEach((row, index) => {
+                    standingsTable.appendChild(row);
+                });
+            }
+
+            updateStandings();
+        });
+    </script>
+</body>
+</html>
