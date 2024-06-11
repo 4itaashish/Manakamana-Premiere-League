@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eFootball League</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -27,9 +28,10 @@
             padding: 1em;
             text-decoration: none;
             text-align: center;
+            font-size: 20px;
         }
         nav a:hover {
-            background-color: #7b1fa2;
+            background-color: #b73714;
         }
         .content {
             padding: 2em;
@@ -100,7 +102,7 @@
             }
         }
     </style>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    
     
 </head>
 <body>
@@ -150,12 +152,12 @@
             <h2>Matchday 4</h2>
             <div class="match">
                 <div>RAJ</div>
-                <div>VS</div>
+                <div>0 - 6</div>
                 <div>AASHISH</div>
             </div>
             <div class="match">
                 <div>BINAYA</div>
-                <div>VS</div>
+                <div>3 - 3</div>
                 <div>AASHISH</div>
             </div>
             <h2>Matchday 5</h2>
@@ -213,39 +215,39 @@
                     </tr>
                     <tr>
                         <td>AASHISH</td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>12</td>
+                        <td>4</td>
                         <td>3</td>
-                        <td>9</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>21</td>
                         <td>6</td>
-                        <td>✔️✔️</td>
+                        <td>15</td>
+                        <td>10</td>
+                        <td>✔️✔️✔️➖</td>
                     </tr>
                     <tr>
                         <td>RAJ</td>
-                        <td>3</td>
+                        <td>4</td>
                         <td>0</td>
                         <td>1</td>
-                        <td>2</td>
+                        <td>3</td>
                         <td>5</td>
-                        <td>7</td>
-                        <td>-2</td>
+                        <td>13</td>
+                        <td>-8</td>
                         <td>1</td>
-                        <td>❌❌➖</td>
+                        <td>❌❌➖❌</td>
                     </tr>
                     <tr>
                         <td>BINAYA</td>
-                        <td>4</td>
-                        <td>1</td>
+                        <td>5</td>
                         <td>1</td>
                         <td>2</td>
-                        <td>8</td>
-                        <td>14</td>
+                        <td>2</td>
+                        <td>11</td>
+                        <td>17</td>
                         <td>-7</td>
-                        <td>4</td>
-                        <td>❌❌✔️➖</td>
+                        <td>5</td>
+                        <td>❌❌✔️➖➖</td>
                     </tr>
                 </tbody>
             </table>
@@ -309,7 +311,7 @@
 
             emailjs.send('service_1ru1r5k', 'template_ehd1hqm', templateParams)
                 .then(function(response) {
-                    alert('SUCCESS! Your registration details have been sent.', response.status, response.text);
+                    alert('SUCCESS! Your registration Is Done!!!', response.status, response.text);
                 }, function(error) {
                     alert('FAILED... Please try again later.', error);
                 });
