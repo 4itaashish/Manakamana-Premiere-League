@@ -92,8 +92,8 @@ nav a:hover {
     text-align: center;
 }
 #qr-code{
-    height: 430px;
-    width: 300px;
+    height: 100px;
+    width: 100px;
     right: 5%;
 }
 img[alt="QR Code"] {
