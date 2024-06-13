@@ -1,39 +1,3 @@
-(function() {
-    emailjs.init("9EDiQhqhtLwO7nOzi"); // Replace with your EmailJS user ID
-})();
-
-function sendEmail() {
-    var name = document.getElementById('name').value.trim();
-    var email = document.getElementById('email').value.trim();
-    var mobile = document.getElementById('mobile').value.trim();
-    var address = document.getElementById('address').value.trim();
-
-    // Additional validation
-    if (!name || !email || !mobile || !address) {
-        alert('All fields are mandatory. Please fill in all the details.');
-        return;
-    }
-
-    if (!/^\d{10}$/.test(mobile)) {
-        alert('Mobile number must be exactly 10 digits.');
-        return;
-    }
-
-    var templateParams = {
-        name: name,
-        email: email,
-        mobile: mobile,
-        address: address
-    };
-
-    emailjs.send('service_1ru1r5k', 'template_ehd1hqm', templateParams)
-        .then(function(response) {
-            alert('SUCCESS! Your registration Is Done!!!', response.status, response.text);
-        }, function(error) {
-            alert('FAILED... Please try again later.', error);
-        });
-}
-
 document.addEventListener('DOMContentLoaded', function() {
     const standingsTable = document.getElementById('standings-table').getElementsByTagName('tbody')[0];
     const standings = Array.from(standingsTable.getElementsByTagName('tr'));
@@ -92,3 +56,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
     updateStandings();
 });
+
+(function() {
+    emailjs.init("9EDiQhqhtLwO7nOzi"); // Replace with your EmailJS user ID
+})();
+
+function sendEmail() {
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var mobile = document.getElementById('mobile').value.trim();
+    var address = document.getElementById('address').value.trim();
+
+    // Additional validation
+    if (!name || !email || !mobile || !address) {
+        alert('All fields are mandatory. Please fill in all the details.');
+        return;
+    }
+
+    if (!/^\d{10}$/.test(mobile)) {
+        alert('Mobile number must be exactly 10 digits.');
+        return;
+    }
+
+    var templateParams = {
+        name: name,
+        email: email,
+        mobile: mobile,
+        address: address
+    };
+
+    emailjs.send('service_1ru1r5k', 'template_ehd1hqm', templateParams)
+        .then(function(response) {
+            alert('SUCCESS! Your registration Is Done!!!', response.status, response.text);
+        }, function(error) {
+            alert('FAILED... Please try again later.', error);
+        });
+}

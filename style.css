@@ -83,12 +83,6 @@ nav a:hover {
 .register button:hover {
     background-color: #7b1fa2;
 }
-footer {
-    background-color: #b73714;
-    color: white;
-    padding: 1em;
-    text-align: center;
-}
 @media only screen and (max-width: 600px) {
     .match {
         flex-direction: column;
