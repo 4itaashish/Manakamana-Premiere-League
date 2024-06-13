@@ -91,20 +91,20 @@ nav a:hover {
     font-weight: bold;
     text-align: center;
 }
-#qr-code{
-    height: 100px;
-    width: 100px;
-    right: 5%;
-}
+
 img[alt="QR Code"] {
     display: block;
     margin: 1em auto;
+    max-width: 100%;
+    height: auto;
 }
 
 #payment-photo {
     padding: 0.5em;
     border: 1px solid #ddd;
     border-radius: 5px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 a[href$=".jfif"] {
