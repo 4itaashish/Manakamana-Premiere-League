@@ -83,6 +83,42 @@ nav a:hover {
 .register button:hover {
     background-color: #7b1fa2;
 }
+
+/* Additional styles for the new payment section */
+#entry-fee {
+    background-color: #f0f0f0;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+}
+#qr-code{
+    height: 430px;
+    width: 300px;
+    right: 5%;
+}
+img[alt="QR Code"] {
+    display: block;
+    margin: 1em auto;
+}
+
+#payment-photo {
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+a[href$=".jfif"] {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a[href$=".jfif"]:hover {
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 600px) {
     .match {
         flex-direction: column;

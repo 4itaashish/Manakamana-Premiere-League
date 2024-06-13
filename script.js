@@ -56,19 +56,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     updateStandings();
 });
-
-(function() {
-    emailjs.init("9EDiQhqhtLwO7nOzi"); // Replace with your EmailJS user ID
-})();
+document.addEventListener('DOMContentLoaded', function() {
+    emailjs.init("W5zaHs8nkQ-UlhwV0");
+    console.log("EmailJS initialized");
+});
 
 function sendEmail() {
     var name = document.getElementById('name').value.trim();
     var email = document.getElementById('email').value.trim();
     var mobile = document.getElementById('mobile').value.trim();
     var address = document.getElementById('address').value.trim();
+    var paymentPhoto = document.getElementById('payment-photo').files[0];
 
     // Additional validation
-    if (!name || !email || !mobile || !address) {
+    if (!name || !email || !mobile || !address || !paymentPhoto) {
         alert('All fields are mandatory. Please fill in all the details.');
         return;
     }
@@ -78,17 +79,28 @@ function sendEmail() {
         return;
     }
 
-    var templateParams = {
-        name: name,
-        email: email,
-        mobile: mobile,
-        address: address
+    var reader = new FileReader();
+    reader.onload = function(event) {
+        var templateParams = {
+            name: name,
+            email: email,
+            mobile: mobile,
+            address: address,
+            entry_fee: '100',
+            payment_photo: event.target.result
+        };
+
+        console.log("Template Params: ", templateParams);
+
+        emailjs.send('service_1ru1r5k', 'template_urev5o8', templateParams)
+            .then(function(response) {
+                console.log('Email sent successfully', response.status, response.text);
+                alert('SUCCESS! Your registration is done!!!');
+            }, function(error) {
+                console.error('Failed to send email', error);
+                alert('FAILED... Please try again later.');
+            });
     };
 
-    emailjs.send('service_1ru1r5k', 'template_ehd1hqm', templateParams)
-        .then(function(response) {
-            alert('SUCCESS! Your registration Is Done!!!', response.status, response.text);
-        }, function(error) {
-            alert('FAILED... Please try again later.', error);
-        });
+    reader.readAsDataURL(paymentPhoto);
 }
