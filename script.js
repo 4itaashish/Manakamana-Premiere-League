@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     updateStandings();
 });
+
 document.addEventListener('DOMContentLoaded', function() {
     emailjs.init("W5zaHs8nkQ-UlhwV0");
     console.log("EmailJS initialized");
@@ -66,10 +67,10 @@ function sendEmail() {
     var email = document.getElementById('email').value.trim();
     var mobile = document.getElementById('mobile').value.trim();
     var address = document.getElementById('address').value.trim();
-    var paymentPhoto = document.getElementById('payment-photo').files[0];
+    var esewaMobile = document.getElementById('esewa-mobile').value.trim();
 
     // Additional validation
-    if (!name || !email || !mobile || !address || !paymentPhoto) {
+    if (!name || !email || !mobile || !address || !esewaMobile) {
         alert('All fields are mandatory. Please fill in all the details.');
         return;
     }
@@ -79,28 +80,30 @@ function sendEmail() {
         return;
     }
 
-    var reader = new FileReader();
-    reader.onload = function(event) {
-        var templateParams = {
-            name: name,
-            email: email,
-            mobile: mobile,
-            address: address,
-            entry_fee: '100',
-            payment_photo: event.target.result
-        };
+    if (!/^\d{10}$/.test(esewaMobile)) {
+        alert('E-Sewa mobile number must be exactly 10 digits.');
+        return;
+    }
 
-        console.log("Template Params: ", templateParams);
-
-        emailjs.send('service_1ru1r5k', 'template_urev5o8', templateParams)
-            .then(function(response) {
-                console.log('Email sent successfully', response.status, response.text);
-                alert('SUCCESS! Your registration is done!!!');
-            }, function(error) {
-                console.error('Failed to send email', error);
-                alert('FAILED... Please try again later.');
-            });
+    var templateParams = {
+        name: name,
+        email: email,
+        mobile: mobile,
+        address: address,
+        entry_fee: '100',
+        esewa_mobile: esewaMobile
     };
 
-    reader.readAsDataURL(paymentPhoto);
+    console.log("Template Params: ", templateParams);
+
+    emailjs.send('service_1ru1r5k', 'template_urev5o8', templateParams)
+        .then(function(response) {
+            console.log('Email sent successfully', response.status, response.text);
+            alert('SUCCESS! Your registration is done!!!');
+        }, function(error) {
+            console.error('Failed to send email', error);
+            alert('FAILED... Please try again later.');
+        });
 }
+
+
