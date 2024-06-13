@@ -111,3 +111,13 @@ document.getElementById('celebration-button').addEventListener('click', function
     const winnerImage = document.getElementById('winner-image');
     winnerImage.classList.toggle('glow');
 });
+
+
+
+
+
+
+function changeSeason() {
+    var season = document.getElementById('season').value;
+    window.location.href = season;
+}

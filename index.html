@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eFootball League</title>
+    <title>eFootball League - S2</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>eFootball<br>Manakamana Premiere League S1</h1>
+        <h1>eFootball<br>Manakamana Premiere League S2</h1>
     </header>
     <nav>
         <a href="#fixtures">Fixtures</a>
@@ -17,78 +17,250 @@
         <a href="register.html">Register</a>
     </nav>
     <div class="content">
+        <div class="season-selector">
+            <label for="season">Select Season:</label>
+            <select id="season" onchange="changeSeason()">
+                <option value="season1.html">S1</option>
+                <option value="index.html" selected>S2</option>
+            </select>
+        </div>
         <section id="fixtures" class="matches">
             <h2>Matchday 1</h2>
             <div class="match">
+                <div>PARU</div>
+                <div> - </div>
                 <div>AASHISH</div>
-                <div>9 - 1</div>
-                <div>BINAYA</div>
+            </div>
+            <div class="match">
+                <div>RAJ</div>
+                <div> - </div>
+                <div>THAKUR</div>
             </div>
             <div class="match">
                 <div>ASAL</div>
-                <div>2 - 1</div>
-                <div>RAJ</div>
+                <div> - </div>
+                <div>SUMAN</div>
             </div>
+            <div class="match">
+                <div>PARU</div>
+                <div> - </div>
+                <div>BINAY</div>
+            </div>
+
             <h2>Matchday 2</h2>
             <div class="match">
-                <div>AASHISH</div>
-                <div>3 - 2</div>
-                <div>RAJ</div>
+                <div>PARU</div>
+                <div> - </div>
+                <div>THAKUR</div>
             </div>
             <div class="match">
-                <div>BINAYA</div>
-                <div>2 - 3</div>
-                <div>ASAL</div>
+                <div>RAJ</div>
+                <div> - </div>
+                <div>AASHISH</div>
             </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div> - </div>
+                <div>BINAY</div>
+            </div>
+            <div class="match">
+                <div>AASHISH</div>
+                <div> - </div>
+                <div>SUMAN</div>
+            </div>
+
             <h2>Matchday 3</h2>
             <div class="match">
-                <div>RAJ</div>
-                <div>2 - 2</div>
-                <div>BINAYA</div>
+                <div>PARU</div>
+                <div> - </div>
+                <div>SUMAN</div>
             </div>
             <div class="match">
-                <div>ASAL</div>
-                <div>1 - 3</div>
-                <div>BINAYA</div>
+                <div>RAJ</div>
+                <div> - </div>
+                <div>BINAY</div>
             </div>
+            <div class="match">
+                <div>AASHISH</div>
+                <div> - </div>
+                <div>THAKUR</div>
+            </div>
+            <div class="match">
+                <div>RAJ</div>
+                <div> - </div>
+                <div>ASAL</div>
+            </div>
+
             <h2>Matchday 4</h2>
             <div class="match">
+                <div>PARU</div>
+                <div> - </div>
                 <div>RAJ</div>
-                <div>0 - 6</div>
-                <div>AASHISH</div>
             </div>
             <div class="match">
-                <div>BINAYA</div>
-                <div>3 - 3</div>
                 <div>AASHISH</div>
+                <div> - </div>
+                <div>BINAY</div>
             </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div> - </div>
+                <div>THAKUR</div>
+            </div>
+            <div class="match">
+                <div>SUMAN</div>
+                <div> - </div>
+                <div>THAKUR</div>
+            </div>
+
             <h2>Matchday 5</h2>
             <div class="match">
-                <div>RAJ</div>
-                <div>1 - 0</div>
+                <div>PARU</div>
+                <div> - </div>
                 <div>ASAL</div>
             </div>
             <div class="match">
+                <div>BINAY</div>
+                <div> - </div>
+                <div>THAKUR</div>
+            </div>
+            <div class="match">
+                <div>RAJ</div>
+                <div> - </div>
+                <div>SUMAN</div>
+            </div>
+            <div class="match">
                 <div>AASHISH</div>
-                <div>4 - 3</div>
+                <div> - </div>
                 <div>ASAL</div>
             </div>
+
             <h2>Matchday 6</h2>
             <div class="match">
-                <div>BINAYA</div>
-                <div>3 - 2</div>
+                <div>PARU</div>
+                <div> - </div>
+                <div>AASHISH</div>
+            </div>
+            <div class="match">
+                <div>AASHISH</div>
+                <div> - </div>
+                <div>THAKUR</div>
+            </div>
+            <div class="match">
                 <div>RAJ</div>
+                <div> - </div>
+                <div>BINAY</div>
             </div>
             <div class="match">
                 <div>ASAL</div>
-                <div>3 - 4</div>
+                <div> - </div>
+                <div>SUMAN</div>
+            </div>
+
+            <h2>Matchday 7</h2>
+            <div class="match">
+                <div>PARU</div>
+                <div> - </div>
+                <div>THAKUR</div>
+            </div>
+            <div class="match">
+                <div>PARU</div>
+                <div> - </div>
+                <div>ASAL</div>
+            </div>
+            <div class="match">
+                <div>RAJ</div>
+                <div> - </div>
                 <div>AASHISH</div>
+            </div>
+            <div class="match">
+                <div>SUMAN</div>
+                <div> - </div>
+                <div>BINAY</div>
+            </div>
+
+            <h2>Matchday 8</h2>
+            <div class="match">
+                <div>PARU</div>
+                <div> - </div>
+                <div>SUMAN</div>
+            </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div> - </div>
+                <div>BINAY</div>
+            </div>
+            <div class="match">
+                <div>RAJ</div>
+                <div> - </div>
+                <div>THAKUR</div>
+            </div>
+            <div class="match">
+                <div>AASHISH</div>
+                <div> - </div>
+                <div>SUMAN</div>
+            </div>
+
+            <h2>Matchday 9</h2>
+            <div class="match">
+                <div>SUMAN</div>
+                <div> - </div>
+                <div>THAKUR</div>
+            </div>
+            <div class="match">
+                <div>PARU</div>
+                <div> - </div>
+                <div>RAJ</div>
+            </div>
+            <div class="match">
+                <div>AASHISH</div>
+                <div> - </div>
+                <div>ASAL</div>
+            </div>
+            <div class="match">
+                <div>SUMAN</div>
+                <div> - </div>
+                <div>BINAY</div>
+            </div>
+
+            <h2>Matchday 10</h2>
+            <div class="match">
+                <div>PARU</div>
+                <div> - </div>
+                <div>BINAY</div>
+            </div>
+            <div class="match">
+                <div>RAJ</div>
+                <div> - </div>
+                <div>ASAL</div>
+            </div>
+            <div class="match">
+                <div>AASHISH</div>
+                <div> - </div>
+                <div>BINAY</div>
+            </div>
+
+            <h2>Matchday 11</h2>
+            <div class="match">
+                <div>ASAL</div>
+                <div> - </div>
+                <div>THAKUR</div>
+            </div>
+            <div class="match">
+                <div>RAJ</div>
+                <div> - </div>
+                <div>SUMAN</div>
+            </div>
+            <div class="match">
+                <div>BINAY</div>
+                <div> - </div>
+                <div>THAKUR</div>
             </div>
         </section>
     </div>
-    <header>
+    <footer>
         <h1>Developed By<br>AASHISH POKHREL</h1>
-    </header>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

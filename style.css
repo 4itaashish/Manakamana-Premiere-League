@@ -10,6 +10,12 @@ header {
     padding: 1em;
     text-align: center;
 }
+footer {
+    background-color: #b73714;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
 nav {
     display: flex;
     justify-content: center;
