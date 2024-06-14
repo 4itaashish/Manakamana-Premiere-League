@@ -128,6 +128,11 @@ function changeSeason() {
 }
 
 
+function changeSeason() {
+    var season = document.getElementById('season').value;
+    window.location.href = season;
+}
+
 
 
 
