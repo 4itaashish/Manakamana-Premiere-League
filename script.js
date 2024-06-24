@@ -121,13 +121,10 @@ function changeSeason() {
     var season = document.getElementById('season').value;
     window.location.href = season;
 }
-
 function changeSeason() {
     var season = document.getElementById('season').value;
     window.location.href = season;
 }
-
-
 function changeSeason() {
     var season = document.getElementById('season').value;
     window.location.href = season;
