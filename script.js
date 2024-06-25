@@ -6,15 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const cells = row.getElementsByTagName('td');
         return {
             name: cells[0].innerText,
-            mp: parseInt(cells[1].innerText),
-            w: parseInt(cells[2].innerText),
-            d: parseInt(cells[3].innerText),
-            l: parseInt(cells[4].innerText),
-            gf: parseInt(cells[5].innerText),
-            ga: parseInt(cells[6].innerText),
-            gd: parseInt(cells[7].innerText),
-            pts: parseInt(cells[8].innerText),
-            form: cells[9].innerText
+            mp: parseInt(cells[1].innerText) || 0,
+            w: parseInt(cells[2].innerText) || 0,
+            d: parseInt(cells[3].innerText) || 0,
+            l: parseInt(cells[4].innerText) || 0,
+            gf: parseInt(cells[5].innerText) || 0,
+            ga: parseInt(cells[6].innerText) || 0,
+            gd: parseInt(cells[7].innerText) || 0,
+            pts: parseInt(cells[8].innerText) || 0
         };
     }
 
@@ -29,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
         cells[6].innerText = data.ga;
         cells[7].innerText = data.gd;
         cells[8].innerText = data.pts;
-        cells[9].innerText = data.form;
     }
 
     function sortStandings(standings) {
