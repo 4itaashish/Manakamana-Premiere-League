@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eFootball League - Points Table</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional CSS for the glowing effect and center alignment */
+        #winner-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #winner-section h2 {
+            font-size: 100px;
+            margin-bottom: 10px;
+            color: rgb(230, 191, 17);
+        }
+
+        #winner-section p {
+            font-size: 60px;
+            margin: 10px 0;
+            color: rgb(184, 29, 29);
+            font-weight: bold;
+            animation: glow-text 1s infinite alternate;
+        }
+
+        #winner-section img {
+            width: 500px;
+            transition: all 0.3s ease-in-out;
+            margin-left: 40px;
+            border-radius: 10px;
+        }
+
+        #celebration-button {
+            display: block;
+            margin: 50px auto;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: aqua;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+            animation: glow-button 1s infinite alternate;
+        }
+
+        .glow {
+            box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.8);
+        }
+
+        @keyframes glow-text {
+            from {
+                text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000;
+            }
+            to {
+                text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff;
+            }
+        }
+
+        @keyframes glow-button {
+            from {
+                box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff;
+            }
+            to {
+                box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            #winner-section h2 {
+                font-size: 30px;
+            }
+
+            #winner-section p {
+                font-size: 25px;
+            }
+
+            #winner-section img {
+                width: 200px;
+                margin-left: 0;
+            }
+
+            #celebration-button {
+                font-size: 16px;
+                padding: 8px 16px;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>eFootball<br>Manakamana Premiere League S1</h1>
+    </header>
+    <nav>
+        <a href="index.html">Fixtures</a>
+        <a href="#points-table">Points Table</a>
+        <a href="register.html">Register</a>
+    </nav>
+    <div class="content">
+        <div class="season-selector">
+            <label for="season">Select Season:</label>
+            <select id="season" onchange="changeSeason()">
+                <option value="season1pointstable.html" selected>S1</option>
+                <option value="season2pointstable.html">S2</option>
+                <option value="season3pointstable">S3</option>
+                <option value="pointstable.html">S4</option>
+                
+                
+            </select>
+        </div>
+        <section id="points-table" class="standings">
+            <h2>Standings</h2>
+            <table id="standings-table">
+                <thead>
+                    <tr>
+                        <th>Club</th>
+                        <th>MP</th>
+                        <th>W</th>
+                        <th>D</th>
+                        <th>L</th>
+                        <th>GF</th>
+                        <th>GA</th>
+                        <th>GD</th>
+                        <th>Pts</th>
+                        <th>Last 5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ASAL</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>14</td>
+                        <td>13</td>
+                        <td>-1</td>
+                        <td>9</td>
+                        <td>✔️✔️❌❌✔️❌</td>
+                    </tr>
+                    <tr>
+                        <td>AASHISH</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>28</td>
+                        <td>13</td>
+                        <td>15</td>
+                        <td>13</td>
+                        <td>✔️✔️✔️➖✔️❌</td>
+                    </tr>
+                    <tr>
+                        <td>RAJ</td>
+                        <td>6</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>8</td>
+                        <td>16</td>
+                        <td>-8</td>
+                        <td>4</td>
+                        <td>❌❌➖❌❌✔️</td>
+                    </tr>
+                    <tr>
+                        <td>BINAYA</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>14</td>
+                        <td>19</td>
+                        <td>-6</td>
+                        <td>8</td>
+                        <td>❌❌✔️➖➖✔️</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <!-- Winner Section -->
+        <section id="winner-section">
+            <h2>WINNER</h2>
+            <p>AASHISH</p>
+            <img src="winner.jpg" alt="Winner Image" id="winner-image">
+            <button id="celebration-button">Celebration</button>
+        </section>
+    </div>
+    <script>
+        function changeSeason() {
+            var season = document.getElementById('season').value;
+            window.location.href = season;
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

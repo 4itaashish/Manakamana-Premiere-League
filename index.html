@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eFootball League - S3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>eFootball<br>Manakamana Premiere League S4</h1>
+    </header>
+    <nav>
+        <a href="#fixtures">Fixtures</a>
+        <a href="pointstable.html">Points Table</a>
+        <a href="register.html">Register</a>
+    </nav>
+    <div class="content">
+        <div class="season-selector">
+            <label for="season">Select Season:</label>
+            <select id="season" onchange="changeSeason()">
+                <option value="season1fixtures.html">S1</option>
+                <option value="season2fixtures.html">S2</option>
+                <option value="season3fixtures.html">S3</option>
+                <option value="index.html" selected>S4</option>
+            </select>
+        </div>
+        <section id="fixtures" class="matches">
+
+            <div>
+                
+                <img src="teams.jpeg" alt="QR Code" id="qr-code">
+                </div>
+            
+            <h2>Matchday 1</h2>
+
+            <div class="match">
+                <div>BINAY (ENG)</div>
+                <div>2 - 3</div>
+                <div>SUJAL (NED)</div>
+            </div>
+            <div class="match">
+                <div>ASAL (ARG)</div>
+                <div>4 - 3</div>
+                <div>SUJAL (NED)</div>
+            </div>
+            <div class="match">
+                <div>RAJ (GER)</div>
+                <div>1 - 1</div>
+                <div>AASHISH (FRA)</div>
+            </div>
+            <div class="match">
+                <div>BINAY (ENG)</div>
+                <div>1 - 1</div>
+                <div>PARU DAI (BRA)</div>
+            </div>
+            <div class="match">
+                <div>ASAL (ARG)</div>
+                <div>5 - 3</div>
+                <div>AASHISH (FRA)</div>
+            </div>
+            <div class="match">
+                <div>THAKUR VAI (POR)</div>
+                <div>0 - 0</div>
+                <div>SUMAN (SPA)</div>
+            </div>
+            <div class="match">
+                <div>RAJ (GER)</div>
+                <div>4 - 5</div>
+                <div>SUMAN (SPA)</div>
+            </div>
+            <div class="match">
+                <div>RAJ (GER)</div>
+                <div>3 - 3</div>
+                <div>PARU DAI (BRA)</div>
+            </div>
+
+           
+            
+            <h2>Matchday 2</h2>
+            <div class="match">
+                <div>BINAY (ENG)</div>
+                <div> - </div>
+                <div>THAKUR VAI (POR)</div>
+            </div>
+            <div class="match">
+                <div>ASAL (ARG)</div>
+                <div> - </div>
+                <div>RAJ (GER)</div>
+            </div>
+            <div class="match">
+                <div>BINAY (ENG)</div>
+                <div> - </div>
+                <div>ASAL (ARG)</div>
+            </div>
+            <div class="match">
+                <div>THAKUR VAI (POR)</div>
+                <div> - </div>
+                <div>SUJAL (NED)</div>
+            </div>
+            <div class="match">
+                <div>SUMAN (SPA)</div>
+                <div> - </div>
+                <div>AASHISH (FRA)</div>
+            </div>
+            <div class="match">
+                <div>SUMAN (SPA)</div>
+                <div> - </div>
+                <div>PARU DAI (BRA)</div>
+            </div>
+            <div class="match">
+                <div>AASHISH (FRA)</div>
+                <div>6 - 1</div>
+                <div>PARU DAI (BRA)</div>
+            </div>
+            <div class="match">
+                <div>RAJ (GER)</div>
+                <div> - </div>
+                <div>SUJAL (NED)</div>
+            </div>
+            
+            <h2>Matchday 3</h2>
+            <div class="match">
+                <div>BINAY (ENG)</div>
+                <div> - </div>
+                <div>AASHISH (FRA)</div>
+            </div>
+            <div class="match">
+                <div>BINAY (ENG)</div>
+                <div> - </div>
+                <div>SUMAN (SPA)</div>
+            </div>
+            <div class="match">
+                <div>ASAL (ARG)</div>
+                <div> - </div>
+                <div>AASHISH (FRA)</div>
+            </div>
+            <div class="match">
+                <div>ASAL (ARG)</div>
+                <div> - </div>
+                <div>PARU DAI (BRA)</div>
+            </div>
+            <div class="match">
+                <div>THAKUR VAI (POR)</div>
+                <div> - </div>
+                <div>SUMAN (SPA)</div>
+            </div>
+            <div class="match">
+                <div>THAKUR VAI (POR)</div>
+                <div> - </div>
+                <div>PARU DAI (BRA)</div>
+            </div>
+            <div class="match">
+                <div>RAJ (GER)</div>
+                <div> - </div>
+                <div>SUJAL (NED)</div>
+            </div>
+            
+            <h2>Matchday 4</h2>
+            <div class="match">
+                <div>BINAY (ENG)</div>
+                <div> - </div>
+                <div>PARU DAI (BRA)</div>
+            </div>
+            <div class="match">
+                <div>BINAY (ENG)</div>
+                <div> - </div>
+                <div>SUJAL (NED)</div>
+            </div>
+            <div class="match">
+                <div>ASAL (ARG)</div>
+                <div> - </div>
+                <div>THAKUR VAI (POR)</div>
+            </div>
+            <div class="match">
+                <div>ASAL (ARG)</div>
+                <div> - </div>
+                <div>SUMAN (SPA)</div>
+            </div>
+            <div class="match">
+                <div>THAKUR VAI (POR)</div>
+                <div> - </div>
+                <div>RAJ (GER)</div>
+            </div>
+            <div class="match">
+                <div>THAKUR VAI (POR)</div>
+                <div> - </div>
+                <div>AASHISH (FRA)</div>
+            </div>
+            <div class="match">
+                <div>RAJ (GER)</div>
+                <div> - </div>
+                <div>PARU DAI (BRA)</div>
+            </div>
+            <div class="match">
+                <div>SUJAL (NED)</div>
+                <div> - </div>
+                <div>SUMAN (SPA)</div>
+            </div>
+            
+            <h2>Matchday 5</h2>
+            <div class="match">
+                <div>BINAY (ENG)</div>
+                <div> - </div>
+                <div>RAJ (GER)</div>
+            </div>
+            <div class="match">
+                <div>BINAY (ENG)</div>
+                <div> - </div>
+                <div>SUMAN (SPA)</div>
+            </div>
+            <div class="match">
+                <div>ASAL (ARG)</div>
+                <div> - </div>
+                <div>SUJAL (NED)</div>
+            </div>
+            <div class="match">
+                <div>THAKUR VAI (POR)</div>
+                <div> - </div>
+                <div>PARU DAI (BRA)</div>
+            </div>
+            <div class="match">
+                <div>SUJAL (NED)</div>
+                <div> - </div>
+                <div>AASHISH (FRA)</div>
+            </div>
+            <div class="match">
+                <div>ASAL (ARG)</div>
+                <div> - </div>
+                <div>SUMAN (SPA)</div>
+            </div>
+            <div class="match">
+                <div>THAKUR VAI (POR)</div>
+                <div> - </div>
+                <div>AASHISH (FRA)</div>
+            </div>
+            
+            <h2>Matchday 6</h2>
+            <div class="match">
+                <div>SUJAL (NED)</div>
+                <div> - </div>
+                <div>PARU DAI (BRA)</div>
+            </div>
+            <div class="match">
+                <div>RAJ (GER)</div>
+                <div> - </div>
+                <div>SUMAN (SPA)</div>
+            </div>
+            <div class="match">
+                <div>RAJ (GER)</div>
+                <div> - </div>
+                <div>AASHISH (FRA)</div>
+            </div>
+            <div class="match">
+                <div>THAKUR VAI (POR)</div>
+                <div> - </div>
+                <div>SUJAL (NED)</div>
+            </div>
+            <div class="match">
+                <div>ASAL (ARG)</div>
+                <div> - </div>
+                <div>PARU DAI (BRA)</div>
+            </div>
+            <div class="match">
+                <div>BINAY (ENG)</div>
+                <div> - </div>
+                <div>AASHISH (FRA)</div>
+            </div>
+
+
+            
+        </section>
+    </div>
+    <footer>
+        <h1>Developed By<br>AASHISH POKHREL</h1>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

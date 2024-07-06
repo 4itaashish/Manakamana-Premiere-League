@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eFootball League - S1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>eFootball<br>Manakamana Premiere League S1</h1>
+    </header>
+    <nav>
+        <a href="#fixtures">Fixtures</a>
+        <a href="pointstable.html">Points Table</a>
+        <a href="register.html">Register</a>
+    </nav>
+    <div class="content">
+        <div class="season-selector">
+            <label for="season">Select Season:</label>
+            <select id="season" onchange="changeSeason()">
+                <option value="season1.html" selected>S1</option>
+                <option value="index.html">S2</option>
+            </select>
+        </div>
+        <section id="fixtures" class="matches">
+            <h2>Matchday 1</h2>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>9 - 1</div>
+                <div>BINAYA</div>
+            </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div>2 - 1</div>
+                <div>RAJ</div>
+            </div>
+            <h2>Matchday 2</h2>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>3 - 2</div>
+                <div>RAJ</div>
+            </div>
+            <div class="match">
+                <div>BINAYA</div>
+                <div>2 - 3</div>
+                <div>ASAL</div>
+            </div>
+            <h2>Matchday 3</h2>
+            <div class="match">
+                <div>RAJ</div>
+                <div>2 - 2</div>
+                <div>BINAYA</div>
+            </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div>1 - 3</div>
+                <div>BINAYA</div>
+            </div>
+            <h2>Matchday 4</h2>
+            <div class="match">
+                <div>RAJ</div>
+                <div>0 - 6</div>
+                <div>AASHISH</div>
+            </div>
+            <div class="match">
+                <div>BINAYA</div>
+                <div>3 - 3</div>
+                <div>AASHISH</div>
+            </div>
+            <h2>Matchday 5</h2>
+            <div class="match">
+                <div>RAJ</div>
+                <div>1 - 0</div>
+                <div>ASAL</div>
+            </div>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>4 - 3</div>
+                <div>ASAL</div>
+            </div>
+            <h2>Matchday 6</h2>
+            <div class="match">
+                <div>BINAYA</div>
+                <div>3 - 2</div>
+                <div>RAJ</div>
+            </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div>3 - 4</div>
+                <div>AASHISH</div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <h1>Developed By<br>AASHISH POKHREL</h1>
+    </footer>
+    <script>
+        function changeSeason() {
+            var season = document.getElementById('season').value;
+            window.location.href = season;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #b73714;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+footer {
+    background-color: #b73714;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #26cec0;
+}
+nav a {
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+nav a:hover {
+    background-color: #b73714;
+}
+.content {
+    padding: 2em;
+}
+.matches, .standings, .register {
+    background-color: white;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.match {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #ddd;
+}
+.match:last-child {
+    border-bottom: none;
+}
+.standings table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.standings th, .standings td {
+    padding: 0.5em;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.standings th {
+    background-color: #e0e0e0;
+}
+.standings td:last-child {
+    text-align: center;
+}
+.register form div {
+    margin-bottom: 1em;
+}
+.register label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+.register input, .register textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.register button {
+    background-color: #b73714;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.register button:hover {
+    background-color: #7b1fa2;
+}
+
+/* Additional styles for the new payment section */
+#entry-fee {
+    background-color: #f0f0f0;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+img[alt="QR Code"] {
+    display: block;
+    margin: 1em auto;
+    max-width: 100%;
+    height: auto;
+}
+
+#payment-photo {
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+a[href$=".jfif"] {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a[href$=".jfif"]:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .match {
+        flex-direction: column;
+        text-align: center;
+    }
+    .standings table, .standings th, .standings td {
+        font-size: 0.8em;
+        padding: 0.3em;
+    }
+}
+
+
+
+
+
+
+
+
+.container{
+    position: absolute;
+    margin-left: 29px;
+}
+
+.first1{
+    border-radius: 10px;
+    border-color: #26cec0;
+    border-width: 3px;
+    height: 25px;
+    width: 70px;
+    margin-top: 25px;
+    padding: 5px 5px;
+}
+.first2{
+    border-radius: 10px;
+    border-color: #26cec0;
+    border-width: 3px;
+    height: 25px;
+    width: 70px;
+    margin-top: 10px;
+    padding: 5px 5px;
+}
+
+.second1{
+    border-radius: 10px;
+    border-color: #26cec0;
+    border-width: 3px;
+    height: 25px;
+    width: 70px;
+    margin-top: 50px;
+    padding: 5px 5px;
+}
+.second2{
+    border-radius: 10px;
+    border-color: #26cec0;
+    border-width: 3px;
+    height: 25px;
+    width: 70px;
+    margin-top: 10px;
+    padding: 5px 5px;
+}
+.third1{
+    border-radius: 10px;
+    border-color: #26cec0;
+    border-width: 3px;
+    position: absolute;
+    top: 23%;
+    left: 140%;
+    height: 25px;
+    width: 70px;
+    margin-top: 25px;
+    padding: 5px 5px;
+}
+.third2{
+    border-radius: 10px;
+    border-color: #26cec0;
+    border-width: 3px;
+    position: absolute;
+    top: 39%;
+    left: 140%;
+    height: 25px;
+    width: 70px;
+    margin-top: 25px;
+    padding: 5px 5px;
+}
+.fourth1{
+    border-radius: 10px;
+    border-color: #26cec0;
+    border-width: 3px;
+    position: absolute;
+    top: 10%;
+    left: 280%;
+    height: 25px;
+    width: 70px;
+    margin-top: 25px;
+    padding: 5px 5px;
+}
+.fourth2{
+    border-radius: 10px;
+    border-color: #26cec0;
+    border-width: 3px;
+    position: absolute;
+    top: 28%;
+    left: 280%;
+    height: 25px;
+    width: 70px;
+    margin-top: 25px;
+    padding: 5px 5px;
+}
+.fifth{
+    border-radius: 10px;
+    border-color: #26cec0;
+    border-width: 3px;
+    position: absolute;
+    top: 20%;
+    left: 410%;
+    height: 25px;
+    width: 70px;
+    margin-top: 25px;
+    padding: 5px 5px;
+}
