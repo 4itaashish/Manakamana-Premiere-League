@@ -93,25 +93,24 @@
 </head>
 <body>
     <header>
-        <h1>eFootball<br>Manakamana Premiere League S1</h1>
+        <h1>eFootball<br>Manakamana Premiere League S5</h1>
     </header>
     <nav>
         <a href="index.html">Fixtures</a>
         <a href="#points-table">Points Table</a>
         <a href="register.html">Register</a>
+        <a href="rules.html">Rules</a>
     </nav>
     <div class="content">
         <div class="season-selector">
             <label for="season">Select Season:</label>
             <select id="season" onchange="changeSeason()">
-                <option value="season1pointstable.html" selected>S1</option>
+                <option value="season1pointstable.html">S1</option>
                 <option value="season2pointstable.html">S2</option>
                 <option value="season3pointstable.html">S3</option>
                 <option value="season4pointstable.html">S4</option>
-                <option value="season5pointstable.html">S5</option>
+                <option value="season5pointstable.html" selected>S5</option>
                 <option value="pointstable.html">S6</option>
-                
-                
             </select>
         </div>
         <section id="points-table" class="standings">
@@ -119,7 +118,7 @@
             <table id="standings-table">
                 <thead>
                     <tr>
-                        <th>Club</th>
+                        <th>Teams</th>
                         <th>MP</th>
                         <th>W</th>
                         <th>D</th>
@@ -128,76 +127,124 @@
                         <th>GA</th>
                         <th>GD</th>
                         <th>Pts</th>
-                        <th>Last 5</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>ASAL</td>
-                        <td>6</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>3</td>
+                        <td>AASHISH</td>
                         <td>14</td>
-                        <td>13</td>
-                        <td>-1</td>
-                        <td>9</td>
-                        <td>✔️✔️❌❌✔️❌</td>
+                        <td>10</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>54</td>
+                        <td>26</td>
+                        <td>28</td>
+                        <td>32</td>
                     </tr>
                     <tr>
-                        <td>AASHISH</td>
-                        <td>6</td>
-                        <td>4</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>28</td>
-                        <td>13</td>
-                        <td>15</td>
-                        <td>13</td>
-                        <td>✔️✔️✔️➖✔️❌</td>
+                        <td>ASAL</td>
+                        <td>14</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>9</td>
+                        <td>32</td>
+                        <td>54</td>
+                        <td>-22</td>
+                        <td>11</td>
                     </tr>
                     <tr>
                         <td>RAJ</td>
-                        <td>6</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>8</td>
-                        <td>16</td>
-                        <td>-8</td>
-                        <td>4</td>
-                        <td>❌❌➖❌❌✔️</td>
+                        <td>14</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>7</td>
+                        <td>36</td>
+                        <td>36</td>
+                        <td>0</td>
+                        <td>17</td>
                     </tr>
                     <tr>
                         <td>BINAYA</td>
-                        <td>6</td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>2</td>
                         <td>14</td>
-                        <td>19</td>
-                        <td>-6</td>
                         <td>8</td>
-                        <td>❌❌✔️➖➖✔️</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>38</td>
+                        <td>25</td>
+                        <td>13</td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td>PARU DAI</td>
+                        <td>14</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>43</td>
+                        <td>32</td>
+                        <td>11</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>DEV AALU</td>
+                        <td>14</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>10</td>
+                        <td>30</td>
+                        <td>52</td>
+                        <td>-22</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>HARI DAI</td>
+                        <td>14</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>18</td>
+                        <td>37</td>
+                        <td>-19</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>SUJAL</td>
+                        <td>14</td>
+                        <td>7</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>40</td>
+                        <td>27</td>
+                        <td>14</td>
+                        <td>23</td>
                     </tr>
                 </tbody>
             </table>
         </section>
-        
-        <!-- Winner Section -->
-        <section id="winner-section">
-            <h2>WINNER</h2>
-            <p>AASHISH</p>
-            <img src="winner.jpg" alt="Winner Image" id="winner-image">
-            <button id="celebration-button">Celebration</button>
-        </section>
     </div>
-    <script>
-        function changeSeason() {
-            var season = document.getElementById('season').value;
-            window.location.href = season;
-        }
-    </script>
+    <div class="container">
+        <div class="first">
+            <input type="text" placeholder="AASHISH" class="first1" readonly><br>
+            <input type="text" placeholder="BINAYA" class="first2" readonly>
+        </div>
+        <div class="second">
+            <input type="text" placeholder="SUJAL" class="second1" readonly><br>
+            <input type="text" placeholder="PARU DAI" class="second2" readonly>
+        </div>
+
+        <div class="third">
+            <input type="text" placeholder="AASHISH" class="third1" readonly><br>
+            <input type="text" placeholder="SUJAL" class="third2" readonly>
+        </div>
+
+        <div class="fourth">
+            <input type="text" placeholder="BINAYA" class="fourth1" readonly><br>
+            <input type="text" placeholder="AASHISH" class="fourth2" readonly>
+            
+            <input type="text" placeholder="CHAMPION" class="fifth" readonly>
+        </div>
+    </div>
+   
     <script src="script.js"></script>
 </body>
 </html>
