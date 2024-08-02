@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eFootball League - Points Table</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Modal CSS */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .player-name{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>eFootball<br>Manakamana Premiere League S5</h1>
+    </header>
+    <nav>
+        <a href="index.html">Fixtures</a>
+        <a href="#points-table">Points Table</a>
+        <a href="register.html">Register</a>
+        <a href="rules.html">Rules</a>
+    </nav>
+    <div class="content">
+        <div class="season-selector">
+            <label for="season">Select Season:</label>
+            <select id="season" onchange="changeSeason()">
+                <option value="season1pointstable.html">S1</option>
+                <option value="season2pointstable.html">S2</option>
+                <option value="season3pointstable.html">S3</option>
+                <option value="season4pointstable.html">S4</option>
+                <option value="season5pointstable.html">S5</option>
+                <option value="season6pointstable.html" selected>S6</option>
+                <option value="pointstable.html">S7</option>
+            </select>
+        </div>
+        <section id="points-table" class="standings">
+            <h2>Team Barca</h2>
+            <table id="standings-table">
+                <thead>
+                    <tr>
+                        <th>Teams</th>
+                        <th>MP</th>
+                        <th>W</th>
+                        <th>D</th>
+                        <th>L</th>
+                        <th>GF</th>
+                        <th>GA</th>
+                        <th>GD</th>
+                        <th>Pts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="player-name" data-player="AASHISH">AASHISH</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>34</td>
+                        <td>10</td>
+                        <td>24</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td class="player-name" data-player="ASAL">ASAL</td>
+                        <td>8</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>5</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>-1</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td class="player-name" data-player="RAJ">RAJ</td>
+                        <td>8</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>11</td>
+                        <td>14</td>
+                        <td>-3</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td class="player-name" data-player="SUJAL">SUJAL</td>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>11</td>
+                        <td>8</td>
+                        <td>3</td>
+                        <td>14</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="points-table" class="standings">
+            <h2>Team Madrid</h2>
+            <table id="standings-table">
+                <thead>
+                    <tr>
+                        <th>Teams</th>
+                        <th>MP</th>
+                        <th>W</th>
+                        <th>D</th>
+                        <th>L</th>
+                        <th>GF</th>
+                        <th>GA</th>
+                        <th>GD</th>
+                        <th>Pts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                      <tr>
+                        <td class="player-name" data-player="BINAYA">BINAYA</td>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>-1</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td class="player-name" data-player="DEV AALU">DEV AALU</td>
+                        <td>8</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>14</td>
+                        <td>24</td>
+                        <td>-10</td>
+                        <td>10</td>
+                    </tr>
+                  
+                      <tr>
+                        <td class="player-name" data-player="HARI DAI">HARI DAI</td>
+                        <td>8</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>6</td>
+                        <td>8</td>
+                        <td>11</td>
+                        <td>-3</td>
+                        <td>6</td>
+                    </tr>
+                    
+                  
+                    
+                     
+                    <tr>
+                        <td class="player-name" data-player="PARU DAI">PARU DAI</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>6</td>
+                        <td>9</td>
+                        <td>15</td>
+                        <td>-6</td>
+                        <td>4</td>
+                    </tr>
+                   
+                    
+                    
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <div class="container">
+        <div class="first">
+            <input type="text" placeholder="AASHISH" class="first1" readonly><br>
+            <input type="text" placeholder="DEV AALU" class="first2" readonly>
+        </div>
+        <div class="second">
+            <input type="text" placeholder="BINAYA" class="second1" readonly><br>
+            <input type="text" placeholder="SUJAL" class="second2" readonly>
+        </div>
+        <div class="third">
+            <input type="text" placeholder="AASHISH" class="third1s6" readonly><br>
+            <input type="text" placeholder="BINAYA" class="third2s6" readonly>
+        </div>
+        <div class="fourth">
+            <input type="text" placeholder="AASHISH" class="fifths6" readonly>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Player List</h2>
+            <ul id="player-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        
+// Get the modal
+var modal = document.getElementById("modal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Function to load the list of players
+function loadPlayerList(player) {
+    var playerList = {
+        "AASHISH": ["Rashford", "Neymar", "Messi", "Salah", "Pedri", "De Jong", "Davies", "Nuno Mendes", "Van de Ven", "Hakimi", "Ter Stegen", "Son", "Correa", "Haaland", "Lamine Yamal", "Mac Allister", "Gundogan", "Rodri", "Dembele", "E. fernandnez", "Kimmich", "Balde", "Van Dijk"],
+        "ASAL": ["Ter Stegen", "Akanji", "Van Dijk", "Kounde", "Nuno Mendes", "De Ligt", "Alphonso Davies", "Pedri", "Rice", "Kante", "Hakimi", "Griezmann", "Olmo", "Musiala", "Lo Celso", "Jota", "Kimmich", "Messi", "Chiesa", "Haaland", "Embolo", "Osimhen", "Mata"],
+        "RAJ": ["Haaland", "Neymar", "Son", "Di Maria", "Declan Rice", "De Bruyne", "Theo Hernandez", "Cristian Romero", "Van Dijk", "Kimmich", "Neuer", "Nico Williams", "Musiala", "De Ligt", "Rodri", "Cole Palmer", "Bastoni", "Enzo Fernandez", "Immobile", "Salah", "Ben White", "Davies", "Marcos Llorente"],
+        "SUJAL": ["Rashford", "Lewandowski", "Messi", "Lo Celso", "Kai Havertz", "Rodri", "Alphonso Davies", "Ruben Dias", "Van Dijk", "Wan-Bissaka", "Nuno Mendes", "Ter Stegen", "Emiliano Martinez", "Griezmann", "Nico Williams", "Neymar", "Pedri", "Lamine Yamal", "James", "Julian Alvarez", "Bastoni", "Theo Hernandez", "Haaland"],
+        "HARI DAI": ["Player93", "Player94", "Player95", "Player96", "Player97", "Player98", "Player99", "Player100", "Player101", "Player102", "Player103", "Player104", "Player105", "Player106", "Player107", "Player108", "Player109", "Player110", "Player111", "Player112", "Player113", "Player114", "Player115"],
+        "DEV AALU": ["Sommer", "Theo Hernandez", "Van Dijk", "Gvardiol", "Marquinhos", "Kimmich", "Bernardo Silva", "Jude Bellingham", "Hakimi", "Luka Modric", "Kevin De Bruyne", "Odegaard", "Rodri", "Casemiro", "Neymar Jr", "Mbappe", "Cristiano Ronaldo", "Messi", "Haaland", "Havertz", "Vinicius Jr", "Son", "Rafael Leao"],
+        "PARU DAI": ["Mbappe", "Neymar Jr", "Salah", "Messi", "Mac Allister", "Camavinga", "Acuna", "Laporte", "De Ligt", "Martinez Emi", "Theo", "Saka", "De Bruyne", "Fabian Ruiz", "Diaby", "Vinicius Junior", "Nunez", "Bellingham", "Williams Jr", "Muani", "Bernardo", "Militao", "Bastoni"],
+       "BINAYA": ["Mbappe", "Neymar", "Valverde", "Vinicius", "Son", "Haaland", "Rashford", "Kulusevski", "Bellingham", "Foden", "Kante", "Ruben Neves", "Luis Diaz", "Leao", "Watkins", "Rice", "Saliba", "Walker", "Courtois", "Rudiger", "Van Dijk", "Ben White", "Theo Hernandez"]
+
+    };
+
+    // Clear the existing list
+    var listElement = document.getElementById("player-list");
+    listElement.innerHTML = "";
+
+    // Populate the list with players
+    playerList[player].forEach(function(playerName) {
+        var li = document.createElement("li");
+        li.textContent = playerName;
+        listElement.appendChild(li);
+    });
+}
+
+// Attach click event to all player names
+document.querySelectorAll(".player-name").forEach(function(element) {
+    element.onclick = function() {
+        var player = this.getAttribute("data-player");
+        loadPlayerList(player);
+        modal.style.display = "block";
+    };
+});
+    </script>
+    
+</body>
+</html>
