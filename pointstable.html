@@ -5,91 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eFootball League - Points Table</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Additional CSS for the glowing effect and center alignment */
-        #winner-section {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        #winner-section h2 {
-            font-size: 100px;
-            margin-bottom: 10px;
-            color: rgb(230, 191, 17);
-        }
-
-        #winner-section p {
-            font-size: 60px;
-            margin: 10px 0;
-            color: rgb(184, 29, 29);
-            font-weight: bold;
-            animation: glow-text 1s infinite alternate;
-        }
-
-        #winner-section img {
-            width: 500px;
-            transition: all 0.3s ease-in-out;
-            margin-left: 40px;
-            border-radius: 10px;
-        }
-
-        #celebration-button {
-            display: block;
-            margin: 50px auto;
-            padding: 10px 20px;
-            font-size: 20px;
-            cursor: pointer;
-            background-color: aqua;
-            border: none;
-            border-radius: 5px;
-            transition: all 0.3s ease-in-out;
-            animation: glow-button 1s infinite alternate;
-        }
-
-        .glow {
-            box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.8);
-        }
-
-        @keyframes glow-text {
-            from {
-                text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000;
-            }
-            to {
-                text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff;
-            }
-        }
-
-        @keyframes glow-button {
-            from {
-                box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff;
-            }
-            to {
-                box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00;
-            }
-        }
-
-        /* Responsive design */
-        @media (max-width: 600px) {
-            #winner-section h2 {
-                font-size: 30px;
-            }
-
-            #winner-section p {
-                font-size: 25px;
-            }
-
-            #winner-section img {
-                width: 200px;
-                margin-left: 0;
-            }
-
-            #celebration-button {
-                font-size: 16px;
-                padding: 8px 16px;
-                margin-left: 0;
-            }
-        }
-    </style>
+   
 </head>
 <body>
     <header>
@@ -105,14 +21,15 @@
         <div class="season-selector">
             <label for="season">Select Season:</label>
             <select id="season" onchange="changeSeason()">
-                <option value="season1pointstable.html">S1</option>
-                <option value="season2pointstable.html">S2</option>
-                <option value="season3pointstable.html">S3</option>
-                <option value="season4pointstable.html">S4</option>
-                <option value="season5pointstable.html">S5</option>
-                <option value="season6pointstable.html">S6</option>
-                <option value="season7pointstable.html">S7</option>
-                <option value="season8pointstable.html">S8</option>
+                <option value="season1pointstable.html">S1: AASHISH</option>
+                <option value="season2pointstable.html">S2: AASHISH</option>
+                <option value="season3pointstable.html">S3: AASHISH</option>
+                <option value="season4pointstable.html">S4: AASHISH</option>
+                <option value="season5pointstable.html">S5: AASHISH</option>
+                <option value="season6pointstable.html">S6: AASHISH</option>
+                <option value="season7pointstable.html">S7: SUJAL</option>
+                <option value="season8pointstable.html">S8: HARI DAI</option>
+                <option value="season9pointstable.html">S9: PARU DAI</option>
                 <option value="pointstable.html" selected>Current Season</option>
             </select>
         </div>
@@ -134,120 +51,132 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>SANDEEP</td>
-                        <td>14</td>
+                        <td>AASHISH(BARCA)</td>
                         <td>0</td>
                         <td>0</td>
-                        <td>14</td>
-                        <td>7</td>
-                        <td>48</td>
-                        <td>-41</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>ASAL</td>
-                        <td>14</td>
-                        <td>7</td>
-                        <td>1</td>
-                        <td>6</td>
-                        <td>30</td>
-                        <td>23</td>
-                        <td>7</td>
-                        <td>22</td>
-                    </tr>
-                    <tr>
-                        <td>THAKUR VAI</td>
-                        <td>14</td>
-                        <td>5</td>
-                        <td>3</td>
-                        <td>6</td>
-                        <td>20</td>
-                        <td>23</td>
-                        <td>-3</td>
-                        <td>15</td>
-                    </tr>
-                    <tr>
-                        <td>RAAJ</td>
-                        <td>14</td>
-                        <td>7</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>29</td>
-                        <td>27</td>
-                        <td>2</td>
-                        <td>24</td>
-                    </tr>
-                    <tr>
-                        <td>PARU DAI</td>
-                        <td>14</td>
-                        <td>6</td>
-                        <td>5</td>
-                        <td>3</td>
-                        <td>31</td>
-                        <td>23</td>
-                        <td>8</td>
-                        <td>23</td>
-                    </tr>
-                    <tr>
-                        <td>DEV AALU</td>
-                        <td>14</td>
-                        <td>7</td>
+                        <td>ASAL(ARS)</td>
                         <td>0</td>
-                        <td>7</td>
-                        <td>33</td>
-                        <td>27</td>
-                        <td>6</td>
-                        <td>21</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
                     </tr>
                     <tr>
-                        <td>HARI DAI</td>
-                        <td>14</td>
-                        <td>9</td>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>37</td>
-                        <td>22</td>
-                        <td>15</td>
-                        <td>28</td>
+                        <td>THAKUR VAI(PSG)</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
                     </tr>
                     <tr>
-                        <td>BINAYA</td>
-                        <td>14</td>
-                        <td>9</td>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>34</td>
-                        <td>22</td>
-                        <td>12</td>
-                        <td>28</td>
+                        <td>RAAJ(INTER)</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>PARU DAI(RMA)</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>DEV AALU(LIV)</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>HARI DAI(ATM)</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>BINAYA(BAYERN)</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr></tr>
+                        <td>AKHIL DAI(CHE)</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
                     </tr>
                 </tbody>
             </table>
         </section>
     </div>
-    
+    <!--
     <div class="container">
         <div class="first">
-            <input type="text" placeholder="HARI DAI" class="first1" readonly><br>
-            <input type="text" placeholder="BINAYA" class="first2" readonly>
+            <input type="text" placeholder="TBD" class="first1" readonly><br>
+            <input type="text" placeholder="TBD" class="first2" readonly>
         </div>
         <div class="second">
-            <input type="text" placeholder="RAAJ" class="second1" readonly><br>
-            <input type="text" placeholder="PARU DAI" class="second2" readonly>
+            <input type="text" placeholder="TBD" class="second1" readonly><br>
+            <input type="text" placeholder="TBD" class="second2" readonly>
         </div>
 
         <div class="third">
-            <input type="text" placeholder="HARI DAI" class="third1" readonly><br>
-            <input type="text" placeholder="PARU DAI" class="third2" readonly>
+            <input type="text" placeholder="TBD" class="third1" readonly><br>
+            <input type="text" placeholder="TBD" class="third2" readonly>
         </div>
 
         <div class="fourth">
-            <input type="text" placeholder="BINAYA" class="fourth1" readonly><br>
-            <input type="text" placeholder="PARU DAI" class="fourth2" readonly>
+            <input type="text" placeholder="TBD" class="fourth1" readonly><br>
+            <input type="text" placeholder="TBD" class="fourth2" readonly>
             
             <input type="text" placeholder="TBD" class="fifth" readonly>
         </div>
     </div>
+    -->
     
    
     <script src="script.js"></script>
