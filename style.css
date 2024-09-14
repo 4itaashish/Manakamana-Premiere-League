@@ -17,6 +17,8 @@ footer {
     text-align: center;
 }
 nav {
+    position: fixed;
+    top: 88%;
     display: flex;
     justify-content: center;
     background-color: #26cec0;
