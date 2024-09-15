@@ -5,7 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eFootball League - Points Table</title>
     <link rel="stylesheet" href="style.css">
-   
+    <style>
+        /* Additional CSS for the glowing effect and center alignment */
+        #winner-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #winner-section h2 {
+            font-size: 100px;
+            margin-bottom: 10px;
+            color: rgb(230, 191, 17);
+        }
+
+        #winner-section p {
+            font-size: 60px;
+            margin: 10px 0;
+            color: rgb(184, 29, 29);
+            font-weight: bold;
+            animation: glow-text 1s infinite alternate;
+        }
+
+        #winner-section img {
+            width: 500px;
+            transition: all 0.3s ease-in-out;
+            margin-left: 40px;
+            border-radius: 10px;
+        }
+
+        #celebration-button {
+            display: block;
+            margin: 50px auto;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: aqua;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+            animation: glow-button 1s infinite alternate;
+        }
+
+        .glow {
+            box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.8);
+        }
+
+        @keyframes glow-text {
+            from {
+                text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000;
+            }
+            to {
+                text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff;
+            }
+        }
+
+        @keyframes glow-button {
+            from {
+                box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff;
+            }
+            to {
+                box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            #winner-section h2 {
+                font-size: 30px;
+            }
+
+            #winner-section p {
+                font-size: 25px;
+            }
+
+            #winner-section img {
+                width: 200px;
+                margin-left: 0;
+            }
+
+            #celebration-button {
+                font-size: 16px;
+                padding: 8px 16px;
+                margin-left: 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -63,13 +147,13 @@
                     </tr>
                     <tr>
                         <td>ASAL(ARS)</td>
+                        <td>1</td>
                         <td>0</td>
                         <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>-1</td>
                         <td>0</td>
                     </tr>
                     <tr>
@@ -96,14 +180,14 @@
                     </tr>
                     <tr>
                         <td>PARU DAI(RMA)</td>
+                        <td>1</td>
+                        <td>1</td>
                         <td>0</td>
                         <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>3</td>
                     </tr>
                     <tr>
                         <td>DEV AALU(LIV)</td>
@@ -138,7 +222,7 @@
                         <td>0</td>
                         <td>0</td>
                     </tr>
-                    <tr></tr>
+                    <tr>
                         <td>AKHIL DAI(CHE)</td>
                         <td>1</td>
                         <td>0</td>
@@ -156,27 +240,28 @@
     <!--
     <div class="container">
         <div class="first">
-            <input type="text" placeholder="TBD" class="first1" readonly><br>
-            <input type="text" placeholder="TBD" class="first2" readonly>
+            <input type="text" placeholder="HARI DAI" class="first1" readonly><br>
+            <input type="text" placeholder="BINAYA" class="first2" readonly>
         </div>
         <div class="second">
-            <input type="text" placeholder="TBD" class="second1" readonly><br>
-            <input type="text" placeholder="TBD" class="second2" readonly>
+            <input type="text" placeholder="RAAJ" class="second1" readonly><br>
+            <input type="text" placeholder="PARU DAI" class="second2" readonly>
         </div>
 
         <div class="third">
-            <input type="text" placeholder="TBD" class="third1" readonly><br>
-            <input type="text" placeholder="TBD" class="third2" readonly>
+            <input type="text" placeholder="HARI DAI" class="third1" readonly><br>
+            <input type="text" placeholder="PARU DAI" class="third2" readonly>
         </div>
 
         <div class="fourth">
-            <input type="text" placeholder="TBD" class="fourth1" readonly><br>
-            <input type="text" placeholder="TBD" class="fourth2" readonly>
+            <input type="text" placeholder="BINAYA" class="fourth1" readonly><br>
+            <input type="text" placeholder="PARU DAI" class="fourth2" readonly>
             
             <input type="text" placeholder="TBD" class="fifth" readonly>
         </div>
     </div>
-    -->
+
+-->
     
    
     <script src="script.js"></script>
